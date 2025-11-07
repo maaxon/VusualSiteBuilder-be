@@ -17,7 +17,7 @@ export const Page: CollectionConfig = {
       name: 'children',
       type: 'blocks',
       blocks: [],
-      blockReferences:['Div']
+      blockReferences:['Container']
     },
   ],
 }

@@ -66,7 +66,7 @@ export interface Config {
     users: UserAuthOperations;
   };
   blocks: {
-    Div: Div;
+    Container: Div;
     text: Text;
   };
   collections: {
@@ -131,7 +131,7 @@ export interface Div {
   componentPath?: string | null;
   id?: string | null;
   blockName?: string | null;
-  blockType: 'Div';
+  blockType: 'Container';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

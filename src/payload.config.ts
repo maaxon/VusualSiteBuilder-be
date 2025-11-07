@@ -10,7 +10,7 @@ import sharp from 'sharp'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Page } from '@/collections/Pages'
-import { Div } from '@/blocks/div'
+import { Container } from '@/blocks/div'
 import { Text } from '@/blocks/text'
 
 const filename = fileURLToPath(import.meta.url)
@@ -24,7 +24,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  blocks: [Div, Text],
+  blocks: [Container, Text],
   collections: [Users, Media, Page],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

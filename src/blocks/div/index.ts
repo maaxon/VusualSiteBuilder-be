@@ -1,8 +1,8 @@
 import type { Block } from 'payload'
 import { addComponentInfo } from '@/fileds/componentInfo'
 
-export const Div: Block = {
-  slug: 'Div',
+export const Container: Block = {
+  slug: 'Container',
   fields: [
     {
       name: 'tag',
